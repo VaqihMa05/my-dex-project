@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My DEX</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>My DEX (Testnet Sepolia)</h1>
+    <div id="wallet-info">
+      <button id="connectWallet">Connect Wallet</button>
+      <p id="accountAddress">Wallet: Not Connected</p>
+    </div>
+
+    <div id="swap-box">
+      <select id="fromToken">
+        <option value="ETH">ETH</option>
+        <option value="USD">USD</option>
+        <option value="WETH">WETH</option>
+        <option value="DAI">DAI</option>
+        <option value="WSOL">WSOL</option>
+        <option value="WBNB">WBNB</option>
+      </select>
+      <input type="number" id="fromAmount" placeholder="Amount" />
+
+      <select id="toToken">
+        <option value="USD">USD</option>
+        <option value="ETH">ETH</option>
+        <option value="WETH">WETH</option>
+        <option value="DAI">DAI</option>
+        <option value="WSOL">WSOL</option>
+        <option value="WBNB">WBNB</option>
+      </select>
+
+      <button id="swapBtn">Swap</button>
+      <p id="swapStatus"></p>
+    </div>
+
+    <div id="price-chart">
+      <h2>Live Price</h2>
+      <div id="prices"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.6.2/dist/ethers.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
