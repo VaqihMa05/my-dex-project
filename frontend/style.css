@@ -1,0 +1,56 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+#swap-box {
+  margin-top: 2rem;
+  background: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#swap-box select,
+#swap-box input,
+#swap-box button {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+#swap-box button {
+  background-color: #00c897;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#swap-box button:hover {
+  background-color: #00f5a0;
+}
+
+#prices {
+  margin-top: 1.5rem;
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 10px;
+  line-height: 1.8rem;
+}
